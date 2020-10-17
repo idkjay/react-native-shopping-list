@@ -28,10 +28,6 @@ const App = () => {
       id: uuid(),
       text: 'Butter',
     },
-    {
-      id: uuid(),
-      text: 'Onions',
-    },
   ]);
 
   const [editStatus, editStatusChange] = useState(false);
@@ -65,8 +61,8 @@ const App = () => {
   const addItem = (text) => {
     if (!text) {
       Alert.alert(
-        'No item entered',
-        'Please enter an item when adding to your shopping list',
+        'No item entered.',
+        'Please enter an item when adding to your shopping list.',
         [
           {
             text: 'Ok',
